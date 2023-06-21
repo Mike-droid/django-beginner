@@ -1,0 +1,12 @@
+body {
+  background-color: #202020;
+  color: white;
+}
+
+body a {
+  color: whitesmoke;
+}
+
+body a:visited {
+  color: whitesmoke;
+}

@@ -1,6 +1,9 @@
 {% extends 'layouts/base.html' %}
 
+{% load static %}
+
 {% block content %}
   <h1>{{ title }}</h1>
+  <img src="{% static 'Python-logo.png' %}" alt="Python logo" width="100px">
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis enim, voluptatum corrupti cupiditate explicabo delectus corporis voluptates sed quam quidem unde earum magni doloremque incidunt, laboriosam ipsam possimus debitis fuga.</p>
 {% endblock content %}
