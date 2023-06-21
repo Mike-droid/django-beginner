@@ -6,7 +6,10 @@ from django.shortcuts import render
 # Create your views here.
 
 def index(request):
-  return render(request, 'index.html')
+  title = 'django course!!'
+  return render(request, 'index.html', {
+    'title': title
+  })
 
 
 def hello(request, username):
@@ -14,12 +17,17 @@ def hello(request, username):
 
 
 def about(request):
-  return render(request, 'about.html')
+  about_us = 'This is a great text'
+  return render(request, 'about.html', {
+    'about_us': about_us
+  })
 
 
 def projects(request):
   projects = list(Project.objects.values())
-  return render(request, 'projects.html')
+  return render(request, 'projects.html', {
+    'projects': projects
+  })
 
 
 def tasks(request):
